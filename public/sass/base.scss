@@ -22,3 +22,15 @@ $neutralLightest: #fff;
 body {
     font-family: sans-serif;
 }
+
+header {
+    overflow: auto;
+    background-color: $primary;
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px)
+
+/* Mobile */
+
+/* Tablet */
