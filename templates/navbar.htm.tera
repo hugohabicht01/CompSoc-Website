@@ -1,2 +1,3 @@
 <header>
+ <image id = "logo" src = "public/img/logo.webp"/>
 </header>

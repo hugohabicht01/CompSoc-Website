@@ -1,1 +1,1 @@
-body{font-family:sans-serif}
+body{font-family:"Open Sans";margin:0;padding:0}header{display:flex}@media screen and (min-width: 1024px){header{overflow:auto;background-color:#007298;padding:2rem;padding-left:5rem;justify-content:left}#logo{max-height:8rem;max-width:auto}}

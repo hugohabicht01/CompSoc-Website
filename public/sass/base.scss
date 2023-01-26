@@ -20,17 +20,29 @@ $neutralLighter: #e8ebeb;
 $neutralLightest: #fff;
 
 body {
-    font-family: sans-serif;
+    font-family: "Open Sans";
+    margin: 0;
+    padding: 0;
 }
 
-header {
-    overflow: auto;
-    background-color: $primary;
+header{
+    display: flex;
 }
 
 /* Desktop */
-@media screen and (min-width: 1024px)
-
+@media screen and (min-width: 1024px){
+    header {
+        overflow: auto;
+        background-color: $primaryDark;
+        padding: 2rem;
+        padding-left: 5rem;
+        justify-content: left;
+    }
+    #logo{
+        max-height: 8rem;
+        max-width: auto;
+    }
+}
 /* Mobile */
 
 /* Tablet */
