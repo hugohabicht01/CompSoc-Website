@@ -113,7 +113,50 @@ code {
     hue-rotate(159deg) brightness(89%) contrast(93%);
   margin: 0.3rem;
 }
+.social-large {
+  filter: brightness(0) saturate(100%) invert(70%) sepia(99%) saturate(3189%)
+    hue-rotate(159deg) brightness(89%) contrast(93%);
+  margin: 0.5rem;
+  display:block;
+}
 
+.social-large-wrapper{
+  display:flex;
+  flex-wrap: wrap;
+  direction: row;
+}
+
+form {
+  display:flex;
+  flex-direction:column;
+      flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  width: 100%;
+}
+form label{
+  color:var(--color-text);
+}
+form textarea, input{
+  display:block;
+  width:100%;
+  background-color: var(--color-background2);
+  color:var(--color-text);
+  border:none;
+  outline:none;
+  margin:0.3rem;
+  margin-left: 0;
+  padding:0.3rem;
+}
+input[type="submit"]{
+  cursor: pointer;
+  width: max-content;
+  align-self: center;
+}
+textarea{
+  min-height: 20ex;
+  resize: none;
+}
 @keyframes flash {
   0%,
   45% {
