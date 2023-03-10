@@ -130,6 +130,7 @@ code {
   display: flex;
   flex-direction: column;
   gap: 4rem;
+  max-width: 60rem;
 }
 
 .profile-group .profile:nth-child(2n + 1) {
@@ -141,9 +142,9 @@ code {
 }
 
 .profile {
-  --profile-width: 60rem;
+  --profile-width: 100%;
   --profile-gap: 4rem;
-  --profile-image-width: 20rem;
+  --profile-image-width: 30%;
   --profile-radius: 1rem;
   --profile-shadow: 0.5rem;
 
@@ -152,7 +153,7 @@ code {
   justify-content: center;
   /* gap: var(--profile-gap); */
 
-  width: var(--profile-width);
+  max-width: var(--profile-width);
 
   border: 1px solid #000;
   box-shadow: var(--profile-shadow) var(--profile-shadow) 0 0
@@ -161,7 +162,10 @@ code {
 }
 
 .profile > img {
-  width: var(--profile-image-width);
+  max-width: var(--profile-image-width);
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
   aspect-ratio: 698 / 931;
   border-radius: var(--profile-radius) 0 0 var(--profile-radius);
 }
@@ -198,5 +202,21 @@ code {
   header,
   header nav {
     flex-direction: column;
+  }
+  .profile {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: fit-content;
+    width: min-content;
+  }
+  .profile img {
+    max-height: 80vh;
+    height: unset;
+    max-width: unset;
+    border-radius: var(--profile-radius) var(--profile-radius) 0 0;
+  }
+  .profile-group .profile:nth-child(2n) > img {
+    border-radius: inherit;
   }
 }
