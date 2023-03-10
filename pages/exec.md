@@ -19,7 +19,7 @@ menu:
 
 <div class='profile'>
 
-<img src="/img/jonathan.jpg" href="" />
+<img src="/img/jonathan.webp" href="" />
 <div class='info'>
 
 ## President
@@ -31,7 +31,7 @@ menu:
 
 
 <div class='profile'>
-<img src="/img/jonathan.jpg" href="" />
+<img src="/img/jonathan.webp" href="" />
 <div class='info'>
 
 ## Vice-President
@@ -43,7 +43,7 @@ menu:
 
 
 <div class='profile'>
-<img src="/img/jonathan.jpg" href="" />
+<img src="/img/jonathan.webp" href="" />
 <div class='info'>
 
 ## Secretary
@@ -55,7 +55,7 @@ menu:
 
 
 <div class='profile'>
-<img src="/img/jonathan.jpg" href="" />
+<img src="/img/jonathan.webp" href="" />
 <div class='info'>
 
 ## Treasurer
@@ -67,7 +67,7 @@ menu:
 
 
 <div class='profile'>
-<img src="/img/jonathan.jpg" href="" />
+<img src="/img/jonathan.webp" href="" />
 <div class='info'>
 
 ## Commissioner for Continuity
