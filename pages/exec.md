@@ -7,6 +7,9 @@ keywords:
   - University Society
   - Executive Committee
 description: The home of LU CompSoc.
+menu:
+  main:
+    weight: -1
 ---
 
 # Upper Cabinet
