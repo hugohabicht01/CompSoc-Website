@@ -23,4 +23,8 @@ To test the go http server run `go run .` from inside the `src` directory.
 
 `docker-compose build`
 
+### Tech stack
 
+Here is a high level overview of the tech stack:
+
+![techstack](./docs/devops/Techstack.svg)
