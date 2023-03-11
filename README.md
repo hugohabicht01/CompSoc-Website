@@ -27,4 +27,4 @@ To test the go http server run `go run .` from inside the `src` directory.
 
 Here is a high level overview of the tech stack:
 
-![techstack](./docs/devops/Techstack.svg)
+<img alt="tech stack" style="background-color:white;" src="./docs/devops/Techstack.svg">
