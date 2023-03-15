@@ -29,7 +29,7 @@ func serverStart() {
 	http.Handle("/", fs)
 
 	fmt.Println("Running on http://localhost:8000")
-	err := http.ListenAndServe("localhost:8000", nil)
+	err := http.ListenAndServe("0.0.0.0:8000", nil)
 	if err != nil {
 		log.Fatal(err)
 	}

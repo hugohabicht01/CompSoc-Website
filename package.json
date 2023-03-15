@@ -1,0 +1,12 @@
+{
+  "name": "CompSoc-Website",
+  "version": "0.0.1",
+  "description": "CompSoc-Website",
+  "main": "",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "typescript": "^4.5.5"
+  }
+}

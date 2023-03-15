@@ -1,12 +1,22 @@
-FROM alpine:3.14
+FROM alpine:3.17
 
-RUN apk add --update --no-cache hugo
+RUN apk add --update --no-cache hugo go npm nodejs
 
-WORKDIR /site
+WORKDIR /build
 
 COPY . .
 
-EXPOSE 1313
+RUN npm install
+RUN npm run build
 
-CMD ["hugo", "server", "--bind", "0.0.0.0"]
 
+EXPOSE 8000
+
+RUN hugo
+
+
+WORKDIR /build/src
+
+RUN go build .
+
+CMD ./CompSoc-Website
