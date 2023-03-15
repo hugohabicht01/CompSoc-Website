@@ -8,7 +8,6 @@ import (
 )
 
 
-
 func checkForPublic() bool {
 	_, err := os.Stat("../public")
 	if err == nil {
@@ -24,6 +23,7 @@ func checkForPublic() bool {
 
 func serverStart() {
 	http.HandleFunc("/foo/", dynamicHandler)
+    http.HandleFunc("/exec/", execHandler)
 
 	fs := http.FileServer(http.Dir("../public"))
 	http.Handle("/", fs)
@@ -41,3 +41,4 @@ func main() {
 		serverStart()
 	}
 }
+
