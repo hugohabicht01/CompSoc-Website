@@ -8,3 +8,5 @@ enableRobotsTXT = true
 [markup.goldmark.renderer]
   unsafe = true
 
+[[menu.main]]
+  identifier = "menu"
