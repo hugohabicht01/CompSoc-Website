@@ -23,10 +23,10 @@ func checkForPublic() bool {
 }
 
 func serverStart() {
-	http.HandleFunc("/foo/", dynamicHandler)
+	http.HandleFunc("/", router)
 
-	fs := http.FileServer(http.Dir("../public"))
-	http.Handle("/", fs)
+	// fs := http.FileServer(http.Dir("../public"))
+	// http.Handle("/", fs)
 
 	fmt.Println("Running on http://localhost:8000")
 	err := http.ListenAndServe("0.0.0.0:8000", nil)

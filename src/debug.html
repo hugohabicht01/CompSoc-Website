@@ -2,20 +2,12 @@
 <html lang="en">
 
 <head>
-  <meta name="description" content="{{.Description}}">
-  {{ with .Keywords }}
-  <meta name="keywords" content="{{ range $i, $e := . }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}">{{ end }}
-  <link rel="canonical" href="{{ .Permalink }}" />
+  <meta name="description" content="The home of LU CompSoc.">
+  
+  <meta name="keywords" content="Lancaster University, CompSoc, Computer Science, University Society">
+  <link rel="canonical" href="https://compsoc.io/mytest/" />
   <meta charset="UTF-8">
-  <title>
-    {{- if .IsHome -}}
-    {{ .Site.Title }}
-    {{- else if .Page.Title -}}
-    {{ .Page.Title }}
-    {{- else -}}
-    {{ .Site.Title }}
-    {{- end -}}
-  </title>
+  <title>My Test</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/main.css">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -31,23 +23,41 @@
   <header>
       <a href="/"><h1><span class="logo1">LU</span><span class="logo2">Comp</span><span class="logo3">Soc</span></h1></a>
     <nav>
-        {{ $more := .Site.Menus.main }}
-        {{ $sorted := sort $more "Weight" }}
-        {{ range $sorted }}
-             {{ if and .URL .Name }}
-        <a href="{{ .URL }}">{{ .Name }}</a>
-         {{ end }}
-        {{ end }}
+        
+        
+        
+             
+        <a href="/exec/">Executive Committee</a>
+         
+        
+             
+        
+             
+        <a href="/about/">About us</a>
+         
+        
+             
+        <a href="/events/">Events</a>
+         
+        
+             
+        <a href="/mytest/">My Test</a>
+         
+        
+             
+        <a href="/projects/">Our Projects</a>
+         
+        
+             
+        <a href="/contact/">Contact us</a>
+         
+        
       </nav>
   </header>
   <article>
-    <h2>
-      {{- if .IsHome -}}
-      {{- else -}}
-      {{ .Page.Title}}
-      {{- end -}}
-    </h2>
-    {{ .Content}}
+    <h2>My Test</h2>
+    <div>Hello, World!</div>
+
   </article>
   <footer>
     <a href="https://discord.gg/compsoc " target="_blank" class="social-icon"><img src="/img/discord.svg"
