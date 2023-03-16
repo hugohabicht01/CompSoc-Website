@@ -1,8 +1,8 @@
 version: '3'
 
 services:
-  hugo:
+  server:
     build: .
     ports:
-      - "8000:1313"
+      - "8000:8000"
 

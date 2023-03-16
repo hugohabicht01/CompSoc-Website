@@ -2,18 +2,20 @@
 
 The website for the Lancaster University Computer Science Society.
 
-Make sure you join our [Discord] server!
-
 
 ## Project Setup
 
 ### System Dependencies
 
-hugo, docker and docker-compose
+- hugo
+- docker
+- docker-compose
 
 ### testing
 
-`hugo serve`
+To test the static content run `hugo serve`.
+
+To test the go http server run `go run .` from inside the `src` directory.
 
 ### docker build
 
@@ -21,5 +23,8 @@ hugo, docker and docker-compose
 
 `docker-compose build`
 
+### Tech stack
 
-[discord]: https://discord.gg/compsoc
+Here is a high level overview of the tech stack:
+
+<img alt="tech stack" style="background-color:white;" src="./docs/devops/Techstack.svg">
